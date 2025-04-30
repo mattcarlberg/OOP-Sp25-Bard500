@@ -19,14 +19,17 @@ init()
 ### 1. Change Text Color
 
 ```python
-print(Fore.RED + "This text is red!")
-print(Fore.GREEN + "This text is green!")
+s = Fore.RED + "This text is red!"
+t = Fore.GREEN + "This text is green!"
+print(s)
+print(t)
 ```
 
 ### 2. Change Background Color
 
 ```python
-print(Back.YELLOW + "Yellow background!")
+s = Back.YELLOW + "Yellow background!"
+print(s)
 ```
 
 ### 3. Reset to Normal Style
@@ -52,7 +55,11 @@ print(error_msg)
 
 ## 🧼 Resetting Styles
 
-Always use `Style.RESET_ALL` after styled text to avoid affecting the rest of the terminal output.
+To avoid affecting the rest of the terminal output, you either have to 
+
+1.  Use  `Style.RESET_ALL` after styled text.
+OR
+2.  Initialize colorama with `init(autoreset=True)`.  This means you don't need to manually add `Style.RESET_ALL` — it's done for you after each print call.
 
 ---
 
