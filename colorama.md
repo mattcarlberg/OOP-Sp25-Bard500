@@ -44,12 +44,6 @@ print(Style.RESET_ALL + "Back to normal.")
 print(Fore.BLUE + Back.WHITE + Style.BRIGHT + "Bright blue text on white background")
 ```
 
-### 5. Using it in Variables
-
-```python
-error_msg = Fore.RED + "Error: Invalid input!" + Style.RESET_ALL
-print(error_msg)
-```
 
 ---
 
